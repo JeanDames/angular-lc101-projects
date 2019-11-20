@@ -1,0 +1,14 @@
+footer {
+    text-align: center;
+    border-style: double;
+    border-width: 5px;
+}
+
+.container {
+    background-color: rgba(196, 218, 161, 0.616);
+}
+
+.gif {
+    display: block;
+    margin: 0 auto;
+}
