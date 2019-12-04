@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { stringify } from 'querystring';
 
 @Component({
    selector: 'movie-list',
@@ -11,5 +12,12 @@ export class MovieListComponent implements OnInit {
    constructor() { }
 
    ngOnInit() {
+   }
+
+   addMovie (newTitle: string) {
+      let error : string = '';
+      if(!this.movies.includes(newTitle) || newTitle !== ""){
+         this.movies.push(newTitle);
+      }
    }
 }
